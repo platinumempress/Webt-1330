@@ -26,6 +26,33 @@
     gap: 11px;
   }
   
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Tablet styles */
+    .crypto-section {
+        padding: 10px;
+    }
+    .browser-header {
+        padding: 10px 40px 1px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile styles */
+    .crypto-section {
+        padding: 5px;
+    }
+    .browser-header {
+        padding: 5px 20px 1px 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .browser-controls {
+        margin-bottom: 10px;
+    }
+}
+
   .control-btn {
     border-radius: 50%;
     width: 17px;
@@ -260,4 +287,3 @@
     border: 0;
   }
 
-  
