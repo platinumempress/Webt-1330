@@ -1,221 +1,263 @@
-style>
+/* General styles for the crypto section */
 .crypto-section {
-  background-color: #0b0b0f;
-  box-shadow: 0 95px 70px -48px rgba(0, 0, 0, 0.1);
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center;
-}
+    background-color: #0b0b0f;
+    box-shadow: 0 95px 70px -48px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  /* Styles for the browser header */
+  .browser-header {
+    background-color: #dee1e6;
+    display: flex;
+    width: 100%;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 15px 80px 1px 17px;
+  }
+  
+  /* Styles for the browser controls */
+  .browser-controls {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  
+  .control-btn {
+    border-radius: 50%;
+    width: 17px;
+    height: 16px;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Add pointer cursor */
+  }
+  
+  .close-btn {
+    background-color: #ff6058;
+    border: 1px solid #e14942;
+  }
+  
+  .minimize-btn {
+    background-color: #ffc130;
+    border: 1px solid #e1a325;
+  }
+  
+  .expand-btn {
+    background-color: #27ca40;
+    border: 1px solid #3eaf3f;
+  }
+  
+  /* Styles for the browser tabs */
+  .browser-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Corrected gap value */
+    color: #494c4f;
+    letter-spacing: 0.27px;
+    font: 400 16px 'Roboto', sans-serif;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 11px;
+    background-color: #fff;
+    border-radius: 11px 11px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  }
 
-.browser-header {
-  background-color: #dee1e6;
-  display: flex;
-  width: 100%;
-  gap: 18px;
-  flex-wrap: wrap;
-  padding: 15px 80px 1px 17px;
-}
-
-.browser-controls {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-}
-
-.control-btn {
-  border-radius: 50%;
-  width: 17px;
-  height: 16px;
-}
-
-.close-btn {
-  background-color: #ff6058;
-  border: 1px solid #e14942;
-}
-
-.minimize-btn {
-  background-color: #ffc130;
-  border: 1px solid #e1a325;
-}
-
-.expand-btn {
-  background-color: #27ca40;
-  border: 1px solid #3eaf3f;
-}
-
-.browser-tabs {
-  display: flex;
-  align-items: center;
-  gap: -8px;
-  color: #494c4f;
-  letter-spacing: 0.27px;
-  font: 400 16px Roboto, sans-serif;
-}
-
-.tab {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  padding: 11px;
-  background-color: #fff;
-  border-radius: 11px 11px 0 0;
-}
-
+  /* Styles for tab icons */
 .tab-icon {
-  width: 21px;
-  height: 21px;
-}
+    width: 21px;
+    height: 21px;
+  }
+  
+  /* Styles for the URL bar */
+  .url-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 17px;
+    padding: 7px 18px;
+  }
+  
+  /* Styles for URL controls */
+  .url-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Styles for URL control icons */
+  .url-control-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Styles for the URL input field */
+  .url-input {
+    background-color: #f1f3f4;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    flex: 1;
+  }
+  
+  /* Styles for the URL text */
+  .url-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font: 400 19px 'Roboto', sans-serif;
+    color: #202124;
+  }
+  
+  /* Styles for the main content area */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+  }
 
-.url-bar {
-  background-color: #fff;
-  border-bottom: 1px solid #dadce0;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 17px;
-  padding: 7px 18px;
-}
-
-.url-controls {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.url-control-icon {
-  width: 22px;
-  height: 22px;
-}
-
-.url-input {
-  background-color: #f1f3f4;
-  border-radius: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 14px;
-  flex: 1;
-}
-
-.url-text {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font: 400 19px Roboto, sans-serif;
-  color: #202124;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  color: #fff;
-}
-
+  /* Styles for the hero section */
 .hero-section {
-  text-align: center;
-  max-width: 1200px;
-  padding: 80px 20px;
-}
-
-.hero-title {
-  font-size: 90px;
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background-color: #9494dd;
-  border-radius: 8px;
-  padding: 15px 40px;
-  font-size: 36px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.features-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  padding: 60px 20px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.feature-card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 40px;
-  text-align: center;
-}
-
-.feature-icon {
-  width: 114px;
-  height: 114px;
-  margin-bottom: 20px;
-}
-
-.feature-title {
-  font-size: 46px;
-  font-weight: 900;
-  margin-bottom: 15px;
-}
-
-.jackpot-section {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.jackpot-title {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.jackpot-amount {
-  font-size: 79px;
-  font-weight: 900;
-  letter-spacing: 7.94px;
-}
-
-.footer {
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-text {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-@media (max-width: 991px) {
+    text-align: center;
+    max-width: 1200px;
+    padding: 80px 20px;
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
   .hero-title {
-    font-size: 40px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #333; /* Improved text color for better readability */
+  }
+  
+  .cta-button {
+    background-color: #9494dd;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 36px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff; /* Ensure text is readable on the button */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #7a7acc; /* Darken button color on hover */
+  }
+  
+  /* Styles for the features section */
+  .features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .feature-icon {
+    width: 114px;
+    height: 114px;
+    margin-bottom: 20px;
   }
   
   .feature-title {
-    font-size: 40px;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #333; /* Improved text color for better readability */
   }
   
-  .jackpot-amount {
-    font-size: 40px;
+  /* Styles for the jackpot section */
+  .jackpot-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Add background color for better separation */
   }
-}
+  
+  .jackpot-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333; /* Improved text color for better readability */
+  }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-</style>
+  /* Styles for the jackpot amount */
+.jackpot-amount {
+    font-size: 79px;
+    font-weight: 900;
+    letter-spacing: 7.94px;
+    color: #333; /* Improved text color for better readability */
+  }
+  
+  /* Styles for the footer */
+  .footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333; /* Improved text color for better readability */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .hero-title {
+      font-size: 40px;
+    }
+    
+    .feature-title {
+      font-size: 40px;
+    }
+    
+    .jackpot-amount {
+      font-size: 40px;
+    }
+  }
+  
+  /* Utility class for visually hidden elements */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  
